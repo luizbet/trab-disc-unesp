@@ -1,0 +1,89 @@
+% ============================================================
+% ARQUIVO: src/main.tex
+% DESCRIÇÃO: Documento principal do template
+% ATENÇÃO: Este arquivo NÃO deve ser editado pelo usuário!
+% ============================================================
+
+\documentclass[12pt, a4paper]{article}
+
+\input{config.tex}
+\input{../user/infos.tex}
+
+\begin{document}
+
+\input{capa.tex}
+
+% \tableofcontents
+% \newpage
+
+% \listoffigures
+% \newpage
+
+% \listoftables
+% \newpage
+
+% ============================================================
+% CORPO DO TEXTO (EDITAR AQUI)
+% ============================================================
+
+\section{Introdução}
+
+Este é o template para trabalhos acadêmicos da UNESP.
+Substitua este texto pelo conteúdo do seu trabalho.
+
+\section{Desenvolvimento}
+
+Aqui você escreve o desenvolvimento do seu trabalho.
+
+\subsection{Exemplo de figura}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{exemplo.png}
+    \caption{Legenda da figura}
+    \label{fig:exemplo}
+\end{figure}
+
+\subsection{Exemplo de tabela}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Exemplo de tabela}
+    \label{tab:exemplo}
+    \begin{tabular}{L{3cm} C{3cm} R{3cm}}
+        \toprule
+        \textbf{Coluna 1} & \textbf{Coluna 2} & \textbf{Coluna 3} \\
+        \midrule
+        Dado 1 & 10 & 20 \\
+        Dado 2 & 15 & 25 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Exemplo de equação}
+
+\begin{equation}
+    E = mc^2
+    \label{eq:exemplo}
+\end{equation}
+
+\section{Considerações Finais}
+
+Aqui você escreve a conclusão do seu trabalho.
+
+% ============================================================
+% REFERÊNCIAS
+% ============================================================
+
+\newpage
+\section*{Referências}
+
+\begin{thebibliography}{99}
+    \bibitem{ref1} AUTOR, A. \textbf{Título do livro}. Edição. Cidade: Editora, Ano.
+\end{thebibliography}
+
+\end{document}
+
+% ============================================================
+% FIM DO ARQUIVO main.tex
+% ============================================================

@@ -1,0 +1,15 @@
+{
+    "recommendations": [
+        "James-Yu.latex-workshop",
+        "torn4dom4n.latex-support",
+        "efoerster.texlab",
+        "valentjn.vscode-ltex",
+        "streetsidesoftware.code-spell-checker",
+        "streetsidesoftware.code-spell-checker-portuguese-brazilian",
+        "mikestead.dotenv",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github",
+        "ms-vsliveshare.vsliveshare"
+    ],
+    "unwantedRecommendations": []
+}

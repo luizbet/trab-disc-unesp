@@ -1,0 +1,127 @@
+{
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.cleanAndRetry": true,
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex",
+            "tools": ["pdflatex"]
+        },
+        {
+            "name": "pdflatex → bibtex → pdflatex×2",
+            "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+        },
+        {
+            "name": "latexmk",
+            "tools": ["latexmk"]
+        }
+    ],
+
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": ["%DOCFILE%"]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        }
+    ],
+
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.zoom": "page-fit",
+    "latex-workshop.view.pdf.internal.synctex.keybinding": "ctrl-click",
+
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.synctex.gz"
+    ],
+
+    "latex-workshop.linting.chktex.enabled": true,
+    "latex-workshop.linting.chktex.exec.args": [
+        "-wall",
+        "-n22",
+        "-n30",
+        "-e16"
+    ],
+    "latex-workshop.linting.run": "onSave",
+
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.message.error.show": true,
+    "latex-workshop.message.warning.show": true,
+    "latex-workshop.message.badbox.show": true,
+
+    "editor.wordWrap": "on",
+    "editor.rulers": [80, 120],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "files.encoding": "utf8",
+    "files.eol": "\n",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    "[tex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        "editor.formatOnSave": false,
+        "editor.tabSize": 2
+    },
+
+    "[bibtex]": {
+        "editor.tabSize": 2
+    },
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.aux": true,
+        "**/*.log": true,
+        "**/*.out": true,
+        "**/*.toc": true,
+        "**/*.lof": true,
+        "**/*.lot": true,
+        "**/*.fls": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.synctex.gz": true
+    },
+
+    "files.maxMemoryForLargeFilesMB": 256
+}

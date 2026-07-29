@@ -1,0 +1,77 @@
+% ============================================================
+% ARQUIVO: src/config.tex
+% DESCRIÇÃO: Configurações globais do template LaTeX
+% ATENÇÃO: Este arquivo NÃO deve ser editado pelo usuário!
+% ============================================================
+
+% --- PACOTES ESSENCIAIS ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{ifthen}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{enumitem}
+
+% --- CONFIGURAÇÕES DE MARGEM ---
+\geometry{
+    a4paper,
+    top=30mm,
+    bottom=20mm,
+    left=30mm,
+    right=20mm
+}
+
+% --- ESPAÇAMENTO ---
+\onehalfspacing
+
+% --- CORES INSTITUCIONAIS ---
+\definecolor{verdeUnesp}{RGB}{0, 102, 51}
+\definecolor{azulUnesp}{RGB}{0, 51, 102}
+\definecolor{cinzaUnesp}{RGB}{128, 128, 128}
+
+% --- HYPERREF ---
+\hypersetup{
+    colorlinks=true,
+    linkcolor=azulUnesp,
+    urlcolor=azulUnesp,
+    citecolor=verdeUnesp,
+    bookmarks=true,
+    pdfpagemode=UseNone
+}
+
+% --- LEGENDAS ---
+\captionsetup{
+    font=small,
+    labelsep=endash,
+    justification=centering
+}
+
+% --- LISTAS ---
+\setlist{
+    topsep=6pt,
+    itemsep=2pt,
+    partopsep=0pt,
+    parsep=0pt,
+    leftmargin=2.5em
+}
+
+% --- TABELAS ---
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% ============================================================
+% FIM DO ARQUIVO config.tex
+% ============================================================

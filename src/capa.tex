@@ -1,0 +1,77 @@
+% ============================================================
+% ARQUIVO: src/capa.tex
+% DESCRIÇÃO: Gera a capa com cabeçalho específico para IB ou IGCE
+% DEPENDÊNCIAS: user/infos.tex (dados do usuário)
+% ATENÇÃO: Este arquivo NÃO deve ser editado pelo usuário!
+% ============================================================
+
+\newpage
+\thispagestyle{empty}
+
+% --- CABEÇALHO INSTITUCIONAL ---
+\noindent
+\begin{minipage}[c]{0.20\textwidth}
+    \ifthenelse{\equal{\meuInstituto}{IB}}{
+        \includegraphics[width=\textwidth]{../logos/logo_ib.png}
+    }{
+        \includegraphics[width=\textwidth]{../logos/logo_igce.png}
+    }
+\end{minipage}
+\begin{minipage}[c]{0.80\textwidth}
+    \fontfamily{lmss}\selectfont
+    \small
+    \textbf{UNIVERSIDADE ESTADUAL PAULISTA} \\
+    \textbf{``JÚLIO DE MESQUITA FILHO''} \\
+
+    \ifthenelse{\equal{\meuInstituto}{IB}}{
+        \textbf{Instituto de Biociências -- IB -- \meuCampus}
+    }{
+        \textbf{Instituto de Geociências e Ciências Exatas -- IGCE -- \meuCampus}
+    } \\
+    Curso de \meuCurso
+\end{minipage}
+\vspace{2.5cm}
+
+% --- LINHA DECORATIVA ---
+\hrule height 1.2pt
+\vspace{0.3cm}
+\hrule height 0.4pt
+\vspace{1.5cm}
+
+% --- TÍTULO ---
+\begin{center}
+    \fontfamily{lmss}\selectfont
+    \Large
+    \textbf{\MakeUppercase{\tituloTrabalho}}
+\end{center}
+\vspace{2.5cm}
+
+% --- DADOS DO ALUNO ---
+\noindent
+\begin{minipage}{\textwidth}
+    \fontfamily{lmss}\selectfont
+    \large
+    \textbf{Aluno(a):} \meuNome \\
+    \textbf{RA:} \meuRA \\
+    \textbf{Disciplina:} \minhaDisciplina \\
+    \textbf{Docente:} \meuProfessor \\
+    \textbf{Semestre:} \meuSemestre
+    \ifthenelse{\equal{\palavrasChave}{}}{
+    }{
+        \\ \textbf{Palavras-chave:} \palavrasChave
+    }
+\end{minipage}
+
+\vspace{\fill}
+
+% --- DATA ---
+\begin{center}
+    \fontfamily{lmss}\selectfont
+    \large
+    \textbf{\dataEntrega}
+\end{center}
+\vspace{1cm}
+
+% ============================================================
+% FIM DO ARQUIVO capa.tex
+% ============================================================
