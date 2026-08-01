@@ -1,0 +1,82 @@
+% ============================================================
+% PACOTES - trab-disc-unesp
+% ============================================================
+
+% --- CORRIGE PROBLEMAS DE TAMANHOS DE FONTE (NÃO ALTERA APARÊNCIA) ---
+\usepackage{fix-cm}  % Permite usar tamanhos não padrão sem avisos
+\usepackage{exscale} % Suporte a tamanhos matemáticos maiores
+
+% --- CODIFICAÇÃO E IDIOMA ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+
+% --- GEOMETRIA E ESPAÇAMENTO ---
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    top=3cm,
+    bottom=2cm,
+    left=3cm,
+    right=2cm
+}
+
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{indentfirst}
+\setlength{\parindent}{1.25cm}
+
+% --- FIGURAS E TABELAS ---
+\usepackage{graphicx}
+\graphicspath{{figuras/}{logos/}}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+
+% --- MATEMÁTICA ---
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+% --- CORES E POSICIONAMENTO ---
+\usepackage{xcolor}
+\usepackage{xstring}
+\usepackage{ifthen}
+\usepackage{eso-pic}
+\usepackage{textpos}
+\usepackage{tikz}
+
+% --- FONTES (XeLaTeX) ---
+\usepackage{fontspec}
+
+% --- REFERÊNCIAS (ABNT) ---
+\usepackage[alf]{abntex2cite}
+
+% --- HIPERLINKS ---
+\usepackage[colorlinks=true,
+            linkcolor=black,
+            citecolor=black,
+            urlcolor=blue]{hyperref}
+
+% --- LISTAS ---
+\usepackage{enumitem}
+\setlist{
+    topsep=6pt,
+    itemsep=2pt,
+    leftmargin=2.5em
+}
+
+% --- OUTROS ---
+\usepackage{bookmark}
+\usepackage{ragged2e}
+\usepackage[brazilian]{datetime2}
+
+% ============================================================
+% FIM DO ARQUIVO pacotes.tex
+% ============================================================

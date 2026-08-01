@@ -1,0 +1,190 @@
+% ============================================================
+% INFORMAÇÕES DO TRABALHO - UNESP
+% ============================================================
+
+% ----- DADOS PESSOAIS (EDITAR) -----
+\newcommand{\autorPrincipal}{Seu Nome Completo}
+\newcommand{\raPrincipal}{XXXXXXXX}
+
+% ----- COAUTORES (OPCIONAIS) -----
+% \newcommand{\coautorUm}{Nome do Coautor 1}
+% \newcommand{\raCoautorUm}{XXXXXXXX}
+% \newcommand{\coautorDois}{Nome do Coautor 2}
+% \newcommand{\raCoautorDois}{XXXXXXXX}
+% \newcommand{\coautorTres}{Nome do Coautor 3}
+% \newcommand{\raCoautorTres}{XXXXXXXX}
+% \newcommand{\coautorQuatro}{Nome do Coautor 4}
+% \newcommand{\raCoautorQuatro}{XXXXXXXX}
+% \newcommand{\coautorCinco}{Nome do Coautor 5}
+% \newcommand{\raCoautorCinco}{XXXXXXXX}
+% \newcommand{\coautorSeis}{Nome do Coautor 6}
+% \newcommand{\raCoautorSeis}{XXXXXXXX}
+% \newcommand{\coautorSete}{Nome do Coautor 7}
+% \newcommand{\raCoautorSete}{XXXXXXXX}
+% \newcommand{\coautorOito}{Nome do Coautor 8}
+% \newcommand{\raCoautorOito}{XXXXXXXX}
+% \newcommand{\coautorNove}{Nome do Coautor 9}
+% \newcommand{\raCoautorNove}{XXXXXXXX}
+
+% ----- DADOS DO TRABALHO (EDITAR) -----
+\newcommand{\disciplina}{Nome da Disciplina}
+\newcommand{\semestre}{1º Semestre de 2026}
+\newcommand{\turma}{Noturno}  % Opções: Noturno | Integral | Matutino | Vespertino
+
+% ----- DOCENTES (EDITAR) -----
+% Para cada docente, defina: Nome, gênero e se tem doutorado
+% Gêneros: m (masculino) | f (feminino)
+% Doutor: 1 (sim) | 0 (não)
+
+% Docente 1 (obrigatório)
+\newcommand{\docenteUmNome}{Fulano de Tal}
+\newcommand{\docenteUmGenero}{m}    % m | f
+\newcommand{\docenteUmDoutor}{1}    % 1 = Doutor(a) | 0 = não
+
+% Docente 2 (opcional - comente ou deixe vazio)
+% \newcommand{\docenteDoisNome}{Beltrano de Tal}
+% \newcommand{\docenteDoisGenero}{m}
+% \newcommand{\docenteDoisDoutor}{1}
+
+% Docente 3 (opcional - comente ou deixe vazio)
+% \newcommand{\docenteTresNome}{Ciclano de Tal}
+% \newcommand{\docenteTresGenero}{m}
+% \newcommand{\docenteTresDoutor}{0}
+
+% ----- DADOS INSTITUCIONAIS (ESCOLHA O CURSO) -----
+% Descomente APENAS UMA das opções abaixo:
+
+% === INSTITUTO DE BIOCIÊNCIAS (IB) ===
+% \def\meuCurso{ciencias-biologicas}
+% \def\meuCurso{ecologia}
+% \def\meuCurso{educacao-fisica}
+% \def\meuCurso{pedagogia}
+
+% === INSTITUTO DE GEOCIÊNCIAS (IGCE) ===
+ \def\meuCurso{geografia}
+% \def\meuCurso{ciencias-computacao}
+% \def\meuCurso{engenharia-ambiental}
+% \def\meuCurso{fisica}
+% \def\meuCurso{geologia}
+% \def\meuCurso{matematica}
+
+% ----- CAMPUS (EDITAR) -----
+\newcommand{\cidade}{Rio Claro}
+\newcommand{\estado}{SP}
+
+% ----- DATA (EDITAR) -----
+\newcommand{\ano}{\the\year}
+\newcommand{\dataEntrega}{Rio Claro, \today}
+
+% ----- TÍTULO (EDITAR) -----
+\newcommand{\titulo}{Título do Trabalho Acadêmico}
+\newcommand{\subtitulo}{Subtítulo (opcional)}
+
+% ----- TÍTULO EM INGLÊS (opcional) -----
+\newcommand{\tituloingles}{Title in English}
+
+% ----- PALAVRAS-CHAVE (EDITAR) -----
+\newcommand{\palavrachaveum}{Palavra 1}
+\newcommand{\palavrachavedois}{Palavra 2}
+\newcommand{\palavrachavetres}{Palavra 3}
+\newcommand{\palavrachavequatro}{}
+\newcommand{\palavrachavecinco}{}
+
+% ----- KEYWORDS (EDITAR) -----
+\newcommand{\keywordum}{Keyword 1}
+\newcommand{\keyworddois}{Keyword 2}
+\newcommand{\keywordtres}{Keyword 3}
+\newcommand{\keywordquatro}{}
+\newcommand{\keywordcinco}{}
+
+% ============================================================
+% CONFIGURAÇÕES INSTITUCIONAIS (NÃO ALTERAR)
+% ============================================================
+
+% --- INFORMAÇÕES FIXAS ---
+\newcommand{\universidade}{Universidade Estadual Paulista}
+\newcommand{\universidadenome}{Júlio de Mesquita Filho}
+\newcommand{\universidadeabreviada}{UNESP}
+
+% --- MAPEAMENTO CURSO -> INSTITUTO, DEPARTAMENTO, SIGLA ---
+\IfStrEq{\meuCurso}{ciencias-biologicas}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Ciências Biológicas}
+    \newcommand{\departamento}{Departamento de Biologia Geral e Aplicada}
+    \newcommand{\departamentosigla}{DBGA}
+}{%
+\IfStrEq{\meuCurso}{ecologia}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Ecologia}
+    \newcommand{\departamento}{Departamento de Biodiversidade}
+    \newcommand{\departamentosigla}{DBIO}
+}{%
+\IfStrEq{\meuCurso}{educacao-fisica}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Educação Física}
+    \newcommand{\departamento}{Departamento de Educação}
+    \newcommand{\departamentosigla}{DE}
+}{%
+\IfStrEq{\meuCurso}{pedagogia}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Pedagogia}
+    \newcommand{\departamento}{Departamento de Educação}
+    \newcommand{\departamentosigla}{DE}
+}{%
+\IfStrEq{\meuCurso}{ciencias-computacao}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Ciências da Computação}
+    \newcommand{\departamento}{Departamento de Estatística, Matemática Aplicada e Computação}
+    \newcommand{\departamentosigla}{DEMAC}
+}{%
+\IfStrEq{\meuCurso}{engenharia-ambiental}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Engenharia Ambiental}
+    \newcommand{\departamento}{Departamento de Geologia Aplicada e Ambiental}
+    \newcommand{\departamentosigla}{DGAA}
+}{%
+\IfStrEq{\meuCurso}{fisica}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Física}
+    \newcommand{\departamento}{Departamento de Física}
+    \newcommand{\departamentosigla}{DF}
+}{%
+\IfStrEq{\meuCurso}{geografia}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Geografia}
+    \newcommand{\departamento}{Departamento de Geografia e Planejamento Ambiental}
+    \newcommand{\departamentosigla}{DGPA}
+}{%
+\IfStrEq{\meuCurso}{geologia}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Geologia}
+    \newcommand{\departamento}{Departamento de Geologia}
+    \newcommand{\departamentosigla}{DG}
+}{%
+\IfStrEq{\meuCurso}{matematica}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Matemática}
+    \newcommand{\departamento}{Departamento de Matemática}
+    \newcommand{\departamentosigla}{DM}
+}{%
+    % --- FALLBACK (caso nenhum curso seja selecionado) ---
+    \newcommand{\instituto}{Instituto}
+    \newcommand{\institutoabreviado}{-}
+    \newcommand{\curso}{Curso}
+    \newcommand{\departamento}{Departamento}
+    \newcommand{\departamentosigla}{-}
+}}}}}}}}}}
+
+% ============================================================
+% FIM DO ARQUIVO infos.tex
+% ============================================================

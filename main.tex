@@ -1,0 +1,62 @@
+% ============================================================
+% TRABALHO ACADÊMICO - UNESP
+% trab-disc-unesp
+% ============================================================
+
+\documentclass[12pt, a4paper]{book}
+
+% ===== CONFIGURAÇÕES =====
+\input{config/pacotes}
+\input{config/infos}
+\input{config/comandos}
+
+\begin{document}
+
+% ===== PRÉ-TEXTUAIS =====
+\frontmatter
+
+% ===== CAPA (ESCOLHA AUTOMÁTICA BASEADA NO INSTITUTO) =====
+% Se o instituto for IGCE, carrega capa-igce.tex
+% Se for IB, carrega capa-ib.tex
+\IfStrEq{\institutoabreviado}{IGCE}{%
+    \input{conteudo/01-capa/capa-igce}%
+}{%
+    \IfStrEq{\institutoabreviado}{IB}{%
+        \input{conteudo/01-capa/capa-ib}%
+    }{%
+        % Fallback: caso nenhum instituto seja reconhecido
+        \input{conteudo/01-capa/capa-igce}%
+    }%
+}
+
+% ===== RESUMO E ABSTRACT =====
+\input{conteudo/02-pre-tex/resumo}
+\input{conteudo/02-pre-tex/abstract}
+
+% ===== SUMÁRIO =====
+\tableofcontents
+
+% ===== TEXTUAIS =====
+\mainmatter
+
+% --- CAPÍTULOS ---
+\input{conteudo/03-capitulos/01-intro}
+\input{conteudo/03-capitulos/02-desen}
+\input{conteudo/03-capitulos/03-concl}
+
+% ===== PÓS-TEXTUAIS =====
+\backmatter
+
+% --- APÊNDICES E ANEXOS ---
+\input{conteudo/05-pos-tex/01-anexos}
+\input{conteudo/05-pos-tex/02-apendices}
+
+% ===== REFERÊNCIAS =====
+\bibliographystyle{abntex2-alf}
+\bibliography{conteudo/04-refs/referencias}
+
+\end{document}
+
+% ============================================================
+% FIM DO ARQUIVO main.tex
+% ============================================================

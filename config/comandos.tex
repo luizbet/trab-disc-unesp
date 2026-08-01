@@ -1,0 +1,209 @@
+% ============================================================
+% COMANDOS PERSONALIZADOS - trab-disc-unesp
+% ============================================================
+
+% ----- COMANDO PARA FORMATAR TÍTULO DO DOCENTE -----
+\newcommand{\formatarDocente}[3]{%
+    % #1 = nome
+    % #2 = gênero (m, f)
+    % #3 = doutor (1, 0)
+    \ifthenelse{\equal{#2}{f}}{%
+        \ifthenelse{\equal{#3}{1}}{Profa. Dra. }{Profa. }%
+    }{%
+        \ifthenelse{\equal{#3}{1}}{Prof. Dr. }{Prof. }%
+    }%
+    #1%
+}
+
+% ----- COMANDO PARA LISTAR DOCENTES NA CAPA (SEM QUEBRAS) -----
+\newcounter{totalDocentes}
+\newcommand{\listarDocentes}{%
+    % Conta quantos docentes estão preenchidos
+    \setcounter{totalDocentes}{1}% Docente 1 sempre conta
+    \ifx\docenteDoisNome\undefined\else
+        \ifx\docenteDoisNome\empty\else
+            \stepcounter{totalDocentes}
+        \fi
+    \fi
+    \ifx\docenteTresNome\undefined\else
+        \ifx\docenteTresNome\empty\else
+            \stepcounter{totalDocentes}
+        \fi
+    \fi
+    
+    % Define o cabeçalho e o primeiro docente na mesma linha
+    \ifnum\value{totalDocentes}=1
+        \textbf{Docente:} \formatarDocente{\docenteUmNome}{\docenteUmGenero}{\docenteUmDoutor}
+    \else
+        \textbf{Docentes:} \formatarDocente{\docenteUmNome}{\docenteUmGenero}{\docenteUmDoutor}
+    \fi
+    
+    % Docente 2 (se existir) - COM QUEBRA VIA \par
+    \ifx\docenteDoisNome\undefined\else
+        \ifx\docenteDoisNome\empty\else
+            \par
+            \formatarDocente{\docenteDoisNome}{\docenteDoisGenero}{\docenteDoisDoutor}
+        \fi
+    \fi
+    
+    % Docente 3 (se existir) - COM QUEBRA VIA \par
+    \ifx\docenteTresNome\undefined\else
+        \ifx\docenteTresNome\empty\else
+            \par
+            \formatarDocente{\docenteTresNome}{\docenteTresGenero}{\docenteTresDoutor}
+        \fi
+    \fi
+}
+
+% ----- COMANDO PARA LISTAR AUTORES NA CAPA -----
+\newcounter{totalAutoresTemp}
+\newcommand{\listarAutores}{%
+    % Conta quantos autores estão preenchidos
+    \setcounter{totalAutoresTemp}{1}% Autor principal sempre conta
+    \ifx\coautorUm\undefined\else\ifx\coautorUm\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorDois\undefined\else\ifx\coautorDois\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorTres\undefined\else\ifx\coautorTres\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorQuatro\undefined\else\ifx\coautorQuatro\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorCinco\undefined\else\ifx\coautorCinco\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorSeis\undefined\else\ifx\coautorSeis\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorSete\undefined\else\ifx\coautorSete\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorOito\undefined\else\ifx\coautorOito\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    \ifx\coautorNove\undefined\else\ifx\coautorNove\empty\else\stepcounter{totalAutoresTemp}\fi\fi
+    
+    % Verifica se é apenas o autor principal (1 autor)
+    \ifnum\value{totalAutoresTemp}=1
+        % Apenas um autor: "Nome:" na mesma linha
+        \textbf{Nome:} \autorPrincipal{} \textbf{- RA:} \raPrincipal
+    \else
+        % Vários autores: "Discentes:" em uma linha, autores nas linhas seguintes
+        \textbf{Discentes:} \\
+        \autorPrincipal{} \textbf{- RA:} \raPrincipal
+        % Coautor 1
+        \ifx\coautorUm\undefined\else
+            \ifx\coautorUm\empty\else
+                \\ \coautorUm{} \textbf{- RA:} \raCoautorUm
+            \fi
+        \fi
+        % Coautor 2
+        \ifx\coautorDois\undefined\else
+            \ifx\coautorDois\empty\else
+                \\ \coautorDois{} \textbf{- RA:} \raCoautorDois
+            \fi
+        \fi
+        % Coautor 3
+        \ifx\coautorTres\undefined\else
+            \ifx\coautorTres\empty\else
+                \\ \coautorTres{} \textbf{- RA:} \raCoautorTres
+            \fi
+        \fi
+        % Coautor 4
+        \ifx\coautorQuatro\undefined\else
+            \ifx\coautorQuatro\empty\else
+                \\ \coautorQuatro{} \textbf{- RA:} \raCoautorQuatro
+            \fi
+        \fi
+        % Coautor 5
+        \ifx\coautorCinco\undefined\else
+            \ifx\coautorCinco\empty\else
+                \\ \coautorCinco{} \textbf{- RA:} \raCoautorCinco
+            \fi
+        \fi
+        % Coautor 6
+        \ifx\coautorSeis\undefined\else
+            \ifx\coautorSeis\empty\else
+                \\ \coautorSeis{} \textbf{- RA:} \raCoautorSeis
+            \fi
+        \fi
+        % Coautor 7
+        \ifx\coautorSete\undefined\else
+            \ifx\coautorSete\empty\else
+                \\ \coautorSete{} \textbf{- RA:} \raCoautorSete
+            \fi
+        \fi
+        % Coautor 8
+        \ifx\coautorOito\undefined\else
+            \ifx\coautorOito\empty\else
+                \\ \coautorOito{} \textbf{- RA:} \raCoautorOito
+            \fi
+        \fi
+        % Coautor 9
+        \ifx\coautorNove\undefined\else
+            \ifx\coautorNove\empty\else
+                \\ \coautorNove{} \textbf{- RA:} \raCoautorNove
+            \fi
+        \fi
+    \fi
+}
+
+% ----- COMANDO PARA CONTAR AUTORES (usado para posicionamento) -----
+\newcounter{totalAutores}
+\newcommand{\contarAutores}{%
+    \setcounter{totalAutores}{1}% Autor principal sempre conta
+    \ifx\coautorUm\undefined\else\ifx\coautorUm\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorDois\undefined\else\ifx\coautorDois\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorTres\undefined\else\ifx\coautorTres\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorQuatro\undefined\else\ifx\coautorQuatro\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorCinco\undefined\else\ifx\coautorCinco\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorSeis\undefined\else\ifx\coautorSeis\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorSete\undefined\else\ifx\coautorSete\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorOito\undefined\else\ifx\coautorOito\empty\else\stepcounter{totalAutores}\fi\fi
+    \ifx\coautorNove\undefined\else\ifx\coautorNove\empty\else\stepcounter{totalAutores}\fi\fi
+}
+
+% ----- AMBIENTES PRÉ-TEXTUAIS -----
+\newenvironment{resumo}{%
+    \cleardoublepage
+    \thispagestyle{empty}
+    \chapter*{RESUMO}
+    \vspace{0.5cm}
+}{%
+    \cleardoublepage
+}
+
+\newenvironment{abstract}{%
+    \cleardoublepage
+    \thispagestyle{empty}
+    \chapter*{ABSTRACT}
+    \vspace{0.5cm}
+}{%
+    \cleardoublepage
+}
+
+% ----- COMANDOS PARA FIGURAS -----
+\newcommand{\figura}[4]{%
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=#1]{#2}
+        \caption{#3}
+        \label{fig:#4}
+    \end{figure}
+}
+
+% ----- COMANDOS PARA TABELAS -----
+\newcommand{\tabela}[4]{%
+    \begin{table}[H]
+        \centering
+        \caption{#1}
+        \label{tab:#2}
+        #3
+        \fonte{#4}
+    \end{table}
+}
+
+\newcommand{\fonte}[1]{%
+    \vspace{0.2cm}
+    \par\small\textbf{Fonte:} #1
+}
+
+\newcommand{\nota}[1]{%
+    \vspace{0.2cm}
+    \par\small\textbf{Nota:} #1
+}
+
+% ----- COMANDOS PARA DESTAQUES -----
+\newcommand{\destaque}[1]{\textbf{#1}}
+\newcommand{\citacao}[1]{\textit{#1}}
+
+% ============================================================
+% FIM DO ARQUIVO comandos.tex
+% ============================================================
