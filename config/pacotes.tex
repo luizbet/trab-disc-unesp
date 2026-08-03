@@ -2,9 +2,9 @@
 % PACOTES - trab-disc-unesp
 % ============================================================
 
-% --- CORRIGE PROBLEMAS DE TAMANHOS DE FONTE (NÃO ALTERA APARÊNCIA) ---
-\usepackage{fix-cm}  % Permite usar tamanhos não padrão sem avisos
-\usepackage{exscale} % Suporte a tamanhos matemáticos maiores
+% --- CORRIGE PROBLEMAS DE TAMANHOS DE FONTE ---
+\usepackage{fix-cm}
+\usepackage{exscale}
 
 % --- CODIFICAÇÃO E IDIOMA ---
 \usepackage[utf8]{inputenc}
@@ -18,7 +18,8 @@
     top=3cm,
     bottom=2cm,
     left=3cm,
-    right=2cm
+    right=2cm,
+    headheight=14.5pt
 }
 
 \usepackage{setspace}
@@ -55,8 +56,16 @@
 % --- FONTES (XeLaTeX) ---
 \usepackage{fontspec}
 
-% --- REFERÊNCIAS (ABNT) ---
-\usepackage[alf]{abntex2cite}
+% --- REFERÊNCIAS (BibLaTeX) ---
+\usepackage[backend=biber,
+            style=abnt,
+            date=year,
+            datezeros=false,
+            url=false,
+            doi=false,
+            isbn=false,
+            eprint=false]{biblatex}
+\addbibresource{conteudo/04-refs/referencias.bib}
 
 % --- HIPERLINKS ---
 \usepackage[colorlinks=true,
@@ -72,10 +81,26 @@
     leftmargin=2.5em
 }
 
+% --- CABEÇALHO E RODAPÉ ---
+\usepackage{fancyhdr}
+
 % --- OUTROS ---
 \usepackage{bookmark}
 \usepackage{ragged2e}
 \usepackage[brazilian]{datetime2}
+
+% --- FORMATAÇÃO DO SUMÁRIO ---
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\hfill\fontsize{14pt}{16pt}\selectfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftchapfont}{\normalsize}
+\renewcommand{\cftchappagefont}{\normalsize}
+
+% --- CONTROLE AVANÇADO DO SUMÁRIO ---
+\usepackage{etoc}
+
+% --- FORMATAÇÃO DE CAPÍTULOS E SEÇÕES ---
+\usepackage{titlesec}
 
 % ============================================================
 % FIM DO ARQUIVO pacotes.tex

@@ -28,31 +28,25 @@
 
 % ----- DADOS DO TRABALHO (EDITAR) -----
 \newcommand{\disciplina}{Nome da Disciplina}
-\newcommand{\semestre}{1º Semestre de 2026}
-\newcommand{\turma}{Noturno}  % Opções: Noturno | Integral | Matutino | Vespertino
+
+% ----- TURMA (EDITAR) -----
+%\newcommand{\turma}{Integral}  % Descomente essa linha para integral
+\newcommand{\turma}{Noturno}   % Descomente essa linha para noturno
 
 % ----- DOCENTES (EDITAR) -----
-% Para cada docente, defina: Nome, gênero e se tem doutorado
-% Gêneros: m (masculino) | f (feminino)
-% Doutor: 1 (sim) | 0 (não)
-
-% Docente 1 (obrigatório)
 \newcommand{\docenteUmNome}{Fulano de Tal}
 \newcommand{\docenteUmGenero}{m}    % m | f
 \newcommand{\docenteUmDoutor}{1}    % 1 = Doutor(a) | 0 = não
 
-% Docente 2 (opcional - comente ou deixe vazio)
 % \newcommand{\docenteDoisNome}{Beltrano de Tal}
 % \newcommand{\docenteDoisGenero}{m}
 % \newcommand{\docenteDoisDoutor}{1}
 
-% Docente 3 (opcional - comente ou deixe vazio)
 % \newcommand{\docenteTresNome}{Ciclano de Tal}
 % \newcommand{\docenteTresGenero}{m}
 % \newcommand{\docenteTresDoutor}{0}
 
 % ----- DADOS INSTITUCIONAIS (ESCOLHA O CURSO) -----
-% Descomente APENAS UMA das opções abaixo:
 
 % === INSTITUTO DE BIOCIÊNCIAS (IB) ===
 % \def\meuCurso{ciencias-biologicas}
@@ -68,7 +62,7 @@
 % \def\meuCurso{geologia}
 % \def\meuCurso{matematica}
 
-% ----- CAMPUS (EDITAR) -----
+% ----- LOCAL (EDITAR) -----
 \newcommand{\cidade}{Rio Claro}
 \newcommand{\estado}{SP}
 
@@ -82,6 +76,7 @@
 
 % ----- TÍTULO EM INGLÊS (opcional) -----
 \newcommand{\tituloingles}{Title in English}
+\newcommand{\subtituloingles}{Subtitle in English (opcional)}
 
 % ----- PALAVRAS-CHAVE (EDITAR) -----
 \newcommand{\palavrachaveum}{Palavra 1}
@@ -98,10 +93,33 @@
 \newcommand{\keywordcinco}{}
 
 % ============================================================
+% CONTROLE DOS PRÉ-TEXTUAIS (EDITAR)
+% ============================================================
+
+% --- RESUMO (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarResumo}{1}
+
+% --- ABSTRACT (1 = ativo, 0 = inativo) ---
+% Só funciona se o resumo estiver ativo
+\newcommand{\ativarAbstract}{0}
+
+% --- SUMÁRIO (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarSumario}{1}
+
+% ============================================================
+% CONTROLE DOS PÓS-TEXTUAIS (EDITAR)
+% ============================================================
+
+% --- APÊNDICES (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarApêndices}{0}
+
+% --- ANEXOS (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarAnexos}{0}
+
+% ============================================================
 % CONFIGURAÇÕES INSTITUCIONAIS (NÃO ALTERAR)
 % ============================================================
 
-% --- INFORMAÇÕES FIXAS ---
 \newcommand{\universidade}{Universidade Estadual Paulista}
 \newcommand{\universidadenome}{Júlio de Mesquita Filho}
 \newcommand{\universidadeabreviada}{UNESP}
@@ -177,7 +195,7 @@
     \newcommand{\departamento}{Departamento de Matemática}
     \newcommand{\departamentosigla}{DM}
 }{%
-    % --- FALLBACK (caso nenhum curso seja selecionado) ---
+    % --- FALLBACK ---
     \newcommand{\instituto}{Instituto}
     \newcommand{\institutoabreviado}{-}
     \newcommand{\curso}{Curso}

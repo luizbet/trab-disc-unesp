@@ -2,25 +2,29 @@
 % RESUMO - trab-disc-unesp
 % ============================================================
 
-\chapter*{RESUMO}
+\begin{resumo}
 
-{\fontspec{Times New Roman}\fontsize{12pt}{14pt}\selectfont%
-    Escreva aqui o resumo em português. Deve conter entre 150 e 500 palavras em um único parágrafo.
-\par}
+% --- TEXTO DO RESUMO (12pt, ESPAÇAMENTO SIMPLES, SEM RECUO, JUSTIFICADO) ---
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\singlespacing
+\normalsize
+
+Escreva aqui o resumo em português. Deve conter entre 150 e 500 palavras em um único parágrafo. O resumo deve apresentar de forma concisa os objetivos, a metodologia, os resultados e as conclusões do trabalho.
 
 \vspace{0.5cm}
 
-{\fontspec{Times New Roman}\fontsize{12pt}{14pt}\bfseries\selectfont%
-    Palavras-chave: %
-    \fontspec{Times New Roman}\fontsize{12pt}{14pt}\selectfont%
-    \palavrachaveum. \palavrachavedois. \palavrachavetres.%
-    \ifx\palavrachavequatro\empty\else
-        \ \palavrachavequatro.%
-    \fi
-    \ifx\palavrachavecinco\empty\else
-        \ \palavrachavecinco.%
-    \fi
-\par}
+% --- PALAVRAS-CHAVE (12pt, NEGRITO PARA O TERMO "Palavras-chave:") ---
+{\normalsize\bfseries Palavras-chave:} \normalsize
+\palavrachaveum. \palavrachavedois. \palavrachavetres.%
+\ifx\palavrachavequatro\empty\else
+    \ \palavrachavequatro.%
+\fi
+\ifx\palavrachavecinco\empty\else
+    \ \palavrachavecinco.%
+\fi
+
+\end{resumo}
 
 % ============================================================
 % FIM DO ARQUIVO resumo.tex

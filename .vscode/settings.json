@@ -1,10 +1,10 @@
 {
     "latex-workshop.latex.recipes": [
         {
-            "name": "xelatex → bibtex → xelatex → xelatex",
+            "name": "xelatex → biber → xelatex → xelatex",
             "tools": [
                 "xelatex",
-                "bibtex",
+                "biber",
                 "xelatex",
                 "xelatex"
             ]
@@ -23,10 +23,10 @@
             ]
         },
         {
-            "name": "bibtex",
-            "command": "bibtex",
+            "name": "biber",
+            "command": "biber",
             "args": [
-                "%DOCFILE%"
+                "out/main"
             ]
         }
     ],
@@ -59,7 +59,9 @@
         "*.snm",
         "*.vrb",
         "*.dvi",
-        "*.synctex.gz"
+        "*.synctex.gz",
+        "*.bcf",
+        "*.run.xml"
     ],
     "cSpell.language": "pt,en",
     "cSpell.enableFiletypes": [
