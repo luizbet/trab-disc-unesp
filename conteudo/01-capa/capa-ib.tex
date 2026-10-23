@@ -1,0 +1,138 @@
+% ============================================================
+% CAPA IB - trab-disc-unesp (VERSÃO FINAL)
+% ============================================================
+
+\thispagestyle{empty}
+
+\begin{tikzpicture}[remember picture, overlay]
+|    % ============================================================
+    % IMAGEM DE FUNDO
+    % ============================================================
+    \node[inner sep=0pt, outer sep=0pt] at (current page.center) {%
+        \includegraphics[width=\paperwidth, height=\paperheight]{logos/unesp-logo-fundo.pdf}%
+    };
+    
+    % ============================================================
+    % ELEMENTOS DA CAPA
+    % ============================================================
+    
+    % --- 1. LOGO DA UNESP ---
+    \node[anchor=north west, xshift=0.8cm, yshift=-1.3cm] at (current page.north west) {%
+        \includegraphics[width=4.8cm, keepaspectratio]{logos/logo-unesp.pdf}%
+    };
+    
+    % --- 2. LOGO DO IB (canto superior direito) ---
+    \node[anchor=north east, xshift=-1.8cm, yshift=-1.5cm] at (current page.north east) {%
+        \includegraphics[width=3cm, keepaspectratio]{logos/logo-ib.pdf}%
+    };
+    
+    % --- 3. CAIXA INSTITUCIONAL ---
+    \begin{scope}[shift={(current page.north)}, yshift=-1.5cm]
+        \def\boxWidth{10cm}
+        \def\boxHeight{2.5cm}
+        \draw[draw=none] (-\boxWidth/2, 0) rectangle (\boxWidth/2, -\boxHeight);
+        \node[align=center, text=black, font=\fontfamily{lmss}\selectfont\bfseries, anchor=center] at (0, -\boxHeight/2) {%
+            \parbox{\boxWidth-0.2cm}{%
+                \centering
+                \setlength{\baselineskip}{14pt}%
+                \MakeUppercase{\universidade} \\
+                "\MakeUppercase{\universidadenome}" \\
+                \MakeUppercase{\instituto} -- \MakeUppercase{\cidade}
+            }%
+        };
+    \end{scope}
+    
+    % --- 4. LINHA SUPERIOR ---
+    \begin{scope}[shift={(current page.north)}, yshift=-5.1cm]
+        \def\lineWidth{15cm}
+        \draw[black, line width=1.8pt] (-\lineWidth/2, 0) -- (\lineWidth/2, 0);
+    \end{scope}
+    
+    % --- 5. CAIXA DO DEPARTAMENTO ---
+    \begin{scope}[shift={(current page.north)}, yshift=-5.2cm]
+        \def\boxWidth{14cm}
+        \def\boxHeight{1.2cm}
+        \draw[draw=none] (-\boxWidth/2, 0) rectangle (\boxWidth/2, -\boxHeight);
+        \node[align=center, text=black, font=\fontfamily{lmss}\fontsize{10pt}{16pt}\selectfont\bfseries, anchor=center] at (0, -\boxHeight/2) {%
+            \parbox{\boxWidth-0.2cm}{%
+                \centering
+                \setlength{\baselineskip}{16pt}%
+                \MakeUppercase{\departamento}%
+            }%
+        };
+    \end{scope}
+    
+    % --- 6. LINHA INFERIOR ---
+    \begin{scope}[shift={(current page.north)}, yshift=-6.5cm]
+        \def\lineWidth{15cm}
+        \draw[black, line width=1.8pt] (-\lineWidth/2, 0) -- (\lineWidth/2, 0);
+    \end{scope}
+    
+    % --- 7. TÍTULO ---
+    \begin{scope}[shift={(current page.north)}, yshift=-8.5cm]
+        \def\boxWidth{14cm}
+        \def\boxHeight{4cm}
+        \draw[draw=none] (-\boxWidth/2, 0) rectangle (\boxWidth/2, -\boxHeight);
+        \node[align=center, text=black, font=\fontspec{Arial}\fontsize{14pt}{18pt}\bfseries\selectfont, anchor=center] at (0, -\boxHeight/2) {%
+            \parbox{\boxWidth-0.2cm}{%
+                \centering
+                \setlength{\baselineskip}{18pt}%
+                \MakeUppercase{\titulo}%
+                \ifx\subtitulo\empty\else
+                    \\[2pt]
+                    {\fontspec{Arial}\fontsize{14pt}{16pt}\bfseries\selectfont\color{black}%
+                        \subtitulo%
+                    }%
+                \fi
+            }%
+        };
+    \end{scope}
+    
+    % --- 8. AUTORES ---
+    \contarAutores
+    \node[anchor=south east, text=black, font=\fontspec{Arial}\fontsize{10pt}{12pt}\selectfont,
+          xshift=-2cm, yshift=8cm] at (current page.south east) {%
+        \parbox{10cm}{%
+            \raggedleft
+            \setlength{\baselineskip}{14pt}%
+            \listarAutores
+        }%
+    };
+    
+% --- 9. TURMA E DISCIPLINA ---
+\node[anchor=south east, text=black, font=\fontspec{Arial}\fontsize{10pt}{12pt}\selectfont,
+      xshift=-2cm, yshift=7cm] at (current page.south east) {%
+    \parbox{10cm}{%
+        \raggedleft
+        \setlength{\baselineskip}{14pt}%
+        \textbf{Turma:} \curso{} / \turma \\
+        \textbf{Disciplina:} \disciplina
+    }%
+};
+
+% --- 10. DOCENTE(S) ---
+\node[anchor=north east, text=black, font=\fontspec{Arial}\fontsize{10pt}{12pt}\selectfont,
+      xshift=-2cm, yshift=-22.6cm] at (current page.north east) {%
+    \parbox{10cm}{%
+        \raggedleft
+        \setlength{\baselineskip}{14pt}%
+        \listarDocentes
+    }%
+};
+    % --- 11. CIDADE/ESTADO ---
+    \node[anchor=south, font=\fontspec{Arial}\fontsize{12pt}{16pt}\bfseries\selectfont\color{black}, yshift=62pt] at (current page.south) {%
+        \cidade\ \textendash\ \estado%
+    };
+    
+    % --- 12. ANO ---
+    \node[anchor=south, font=\fontspec{Arial}\fontsize{12pt}{16pt}\bfseries\selectfont\color{black}, yshift=45pt] at (current page.south) {%
+        \MakeUppercase{\ano}%
+    };
+    
+\end{tikzpicture}
+
+\clearpage
+
+% ============================================================
+% FIM DO ARQUIVO capa-ib.tex
+% ============================================================

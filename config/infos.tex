@@ -1,0 +1,208 @@
+% ============================================================
+% INFORMAÇÕES DO TRABALHO - UNESP
+% ============================================================
+
+% ----- DADOS PESSOAIS (EDITAR) -----
+\newcommand{\autorPrincipal}{Luiz André Colonetti Bet}
+\newcommand{\raPrincipal}{221150447}
+
+% ----- COAUTORES (OPCIONAIS) -----
+% \newcommand{\coautorUm}{Nome do Coautor 1}
+% \newcommand{\raCoautorUm}{XXXXXXXX}
+% \newcommand{\coautorDois}{Nome do Coautor 2}
+% \newcommand{\raCoautorDois}{XXXXXXXX}
+% \newcommand{\coautorTres}{Nome do Coautor 3}
+% \newcommand{\raCoautorTres}{XXXXXXXX}
+% \newcommand{\coautorQuatro}{Nome do Coautor 4}
+% \newcommand{\raCoautorQuatro}{XXXXXXXX}
+% \newcommand{\coautorCinco}{Nome do Coautor 5}
+% \newcommand{\raCoautorCinco}{XXXXXXXX}
+% \newcommand{\coautorSeis}{Nome do Coautor 6}
+% \newcommand{\raCoautorSeis}{XXXXXXXX}
+% \newcommand{\coautorSete}{Nome do Coautor 7}
+% \newcommand{\raCoautorSete}{XXXXXXXX}
+% \newcommand{\coautorOito}{Nome do Coautor 8}
+% \newcommand{\raCoautorOito}{XXXXXXXX}
+% \newcommand{\coautorNove}{Nome do Coautor 9}
+% \newcommand{\raCoautorNove}{XXXXXXXX}
+
+% ----- DADOS DO TRABALHO (EDITAR) -----
+\newcommand{\disciplina}{Prática de Ensino e Estágio Supervisionado III}
+
+% ----- TURMA (EDITAR) -----
+%\newcommand{\turma}{Integral}  % Descomente essa linha para integral
+\newcommand{\turma}{Noturno}   % Descomente essa linha para noturno
+
+% ----- DOCENTES (EDITAR) -----
+\newcommand{\docenteUmNome}{Maria Bernadete Sarti da Silva Carvalho}
+\newcommand{\docenteUmGenero}{f}    % m | f
+\newcommand{\docenteUmDoutor}{1}    % 1 = Doutor(a) | 0 = não
+
+% \newcommand{\docenteDoisNome}{Beltrano de Tal}
+% \newcommand{\docenteDoisGenero}{m}
+% \newcommand{\docenteDoisDoutor}{1}
+
+% \newcommand{\docenteTresNome}{Ciclano de Tal}
+% \newcommand{\docenteTresGenero}{m}
+% \newcommand{\docenteTresDoutor}{0}
+
+% ----- DADOS INSTITUCIONAIS (ESCOLHA O CURSO) -----
+
+% === INSTITUTO DE BIOCIÊNCIAS (IB) ===
+% \def\meuCurso{ciencias-biologicas}
+% \def\meuCurso{ecologia}
+% \def\meuCurso{educacao-fisica}
+% \def\meuCurso{pedagogia}
+
+% === INSTITUTO DE GEOCIÊNCIAS (IGCE) ===
+ \def\meuCurso{geografia}
+% \def\meuCurso{ciencias-computacao}
+% \def\meuCurso{engenharia-ambiental}
+% \def\meuCurso{fisica}
+% \def\meuCurso{geologia}
+% \def\meuCurso{matematica}
+
+% ----- LOCAL (EDITAR) -----
+\newcommand{\cidade}{Rio Claro}
+\newcommand{\estado}{SP}
+
+% ----- DATA (EDITAR) -----
+\newcommand{\ano}{\the\year}
+\newcommand{\dataEntrega}{Rio Claro, \today}
+
+% ----- TÍTULO (EDITAR) -----
+\newcommand{\titulo}{Leitura comentada de \textit{Avaliação da aprendizagem escolar: estudos e proposições}}
+\newcommand{\subtitulo}{Análise dos Capítulos VII e VIII da obra de Cipriano Carlos Luckesi}
+
+% ----- TÍTULO EM INGLÊS (opcional) -----
+\newcommand{\tituloingles}{Title in English}
+\newcommand{\subtituloingles}{Subtitle in English (opcional)}
+
+% ----- PALAVRAS-CHAVE (EDITAR) -----
+\newcommand{\palavrachaveum}{Estudo dirigido}
+\newcommand{\palavrachavedois}{Ensino de Geografia}
+\newcommand{\palavrachavetres}{Currículo Paulista}
+\newcommand{\palavrachavequatro}{Formação de Professores}
+\newcommand{\palavrachavecinco}{}
+
+% ----- KEYWORDS (EDITAR) -----
+\newcommand{\keywordum}{Keyword 1}
+\newcommand{\keyworddois}{Keyword 2}
+\newcommand{\keywordtres}{Keyword 3}
+\newcommand{\keywordquatro}{}
+\newcommand{\keywordcinco}{}
+
+% ============================================================
+% CONTROLE DOS PRÉ-TEXTUAIS (EDITAR)
+% ============================================================
+
+% --- RESUMO (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarResumo}{1}
+
+% --- ABSTRACT (1 = ativo, 0 = inativo) ---
+% Só funciona se o resumo estiver ativo
+\newcommand{\ativarAbstract}{0}
+
+% --- SUMÁRIO (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarSumario}{1}
+
+% ============================================================
+% CONTROLE DOS PÓS-TEXTUAIS (EDITAR)
+% ============================================================
+
+% --- APÊNDICES (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarApêndices}{0}
+
+% --- ANEXOS (1 = ativo, 0 = inativo) ---
+\newcommand{\ativarAnexos}{0}
+
+% ============================================================
+% CONFIGURAÇÕES INSTITUCIONAIS (NÃO ALTERAR)
+% ============================================================
+
+\newcommand{\universidade}{Universidade Estadual Paulista}
+\newcommand{\universidadenome}{Júlio de Mesquita Filho}
+\newcommand{\universidadeabreviada}{UNESP}
+
+% --- MAPEAMENTO CURSO -> INSTITUTO, DEPARTAMENTO, SIGLA ---
+\IfStrEq{\meuCurso}{ciencias-biologicas}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Ciências Biológicas}
+    \newcommand{\departamento}{Departamento de Biologia Geral e Aplicada}
+    \newcommand{\departamentosigla}{DBGA}
+}{%
+\IfStrEq{\meuCurso}{ecologia}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Ecologia}
+    \newcommand{\departamento}{Departamento de Biodiversidade}
+    \newcommand{\departamentosigla}{DBIO}
+}{%
+\IfStrEq{\meuCurso}{educacao-fisica}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Educação Física}
+    \newcommand{\departamento}{Departamento de Educação}
+    \newcommand{\departamentosigla}{DE}
+}{%
+\IfStrEq{\meuCurso}{pedagogia}{%
+    \newcommand{\instituto}{Instituto de Biociências}
+    \newcommand{\institutoabreviado}{IB}
+    \newcommand{\curso}{Pedagogia}
+    \newcommand{\departamento}{Departamento de Educação}
+    \newcommand{\departamentosigla}{DE}
+}{%
+\IfStrEq{\meuCurso}{ciencias-computacao}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Ciências da Computação}
+    \newcommand{\departamento}{Departamento de Estatística, Matemática Aplicada e Computação}
+    \newcommand{\departamentosigla}{DEMAC}
+}{%
+\IfStrEq{\meuCurso}{engenharia-ambiental}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Engenharia Ambiental}
+    \newcommand{\departamento}{Departamento de Geologia Aplicada e Ambiental}
+    \newcommand{\departamentosigla}{DGAA}
+}{%
+\IfStrEq{\meuCurso}{fisica}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Física}
+    \newcommand{\departamento}{Departamento de Física}
+    \newcommand{\departamentosigla}{DF}
+}{%
+\IfStrEq{\meuCurso}{geografia}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Geografia}
+    \newcommand{\departamento}{Departamento de Geografia e Planejamento Ambiental}
+    \newcommand{\departamentosigla}{DGPA}
+}{%
+\IfStrEq{\meuCurso}{geologia}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Geologia}
+    \newcommand{\departamento}{Departamento de Geologia}
+    \newcommand{\departamentosigla}{DG}
+}{%
+\IfStrEq{\meuCurso}{matematica}{%
+    \newcommand{\instituto}{Instituto de Geociências e Ciências Exatas}
+    \newcommand{\institutoabreviado}{IGCE}
+    \newcommand{\curso}{Matemática}
+    \newcommand{\departamento}{Departamento de Matemática}
+    \newcommand{\departamentosigla}{DM}
+}{%
+    % --- FALLBACK ---
+    \newcommand{\instituto}{Instituto}
+    \newcommand{\institutoabreviado}{-}
+    \newcommand{\curso}{Curso}
+    \newcommand{\departamento}{Departamento}
+    \newcommand{\departamentosigla}{-}
+}}}}}}}}}}
+
+% ============================================================
+% FIM DO ARQUIVO infos.tex
+% ============================================================

@@ -1,0 +1,50 @@
+% ============================================================
+% TRABALHO ACADÊMICO - UNESP
+% trab-disc-unesp
+% ============================================================
+
+\documentclass[12pt, a4paper, openany]{book}
+
+\input{config/pacotes}
+\input{config/infos}
+\input{config/comandos}
+
+\begin{document}
+
+% --- CAPA (não conta, não mostra) ---
+\IfStrEq{\institutoabreviado}{IGCE}{%
+    \input{conteudo/01-capa/capa-igce}%
+}{%
+    \IfStrEq{\institutoabreviado}{IB}{%
+        \input{conteudo/01-capa/capa-ib}%
+    }{%
+        \input{conteudo/01-capa/capa-igce}%
+    }%
+}
+\thispagestyle{empty}
+
+% --- ZERA A CONTAGEM DE PÁGINAS ANTES DA CAPA ---
+\setcounter{page}{1}
+
+% --- PRÉ-TEXTUAIS (contam, mas NÃO MOSTRAM o número) ---
+\exibirResumo
+\exibirAbstract
+\exibirSumario
+
+% --- TEXTUAIS (mostram o número) ---
+\input{conteudo/03-capitulos/01-intro}
+\input{conteudo/03-capitulos/02-desen}
+\input{conteudo/03-capitulos/03-concl}
+
+% --- REFERÊNCIAS (mostram o número) ---
+\printbibliography
+
+% --- PÓS-TEXTUAIS (mostram o número) ---
+\exibirAnexos
+\exibirApêndices
+
+\end{document}
+
+% ============================================================
+% FIM DO ARQUIVO main.tex
+% ============================================================
