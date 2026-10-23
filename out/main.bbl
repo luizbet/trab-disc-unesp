@@ -19,181 +19,13 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global/global}
-    \entry{chn-6int}{book}{}{}
-      \name{author}{7}{}{%
-        {{un=0,uniquepart=base,hash=ed707e840a2f66947ff24cc208165849}{%
-           family={Barbosa},
-           familyi={B\bibinitperiod},
-           given={Alexandre\bibnamedelimb de\bibnamedelima Freitas},
-           giveni={A\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=0c85c6cc073af4f7c5cfc3095637cf0e}{%
-           family={Dantas},
-           familyi={D\bibinitperiod},
-           given={Alexis},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ac1a5409d2f0a6a0d08bebb7838c927f}{%
-           family={Hendler},
-           familyi={H\bibinitperiod},
-           given={Bruno},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=4548bfafc7323d9770056fe6176253b9}{%
-           family={Jabbour},
-           familyi={J\bibinitperiod},
-           given={Elias},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a00934707b6cf34b9b2370c11eefb2fb}{%
-           family={Hardman},
-           familyi={H\bibinitperiod},
-           given={Francisco\bibnamedelima Foot},
-           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=cb8cf0d1287274d9f35970bedfc67867}{%
-           family={Souza},
-           familyi={S\bibinitperiod},
-           given={Luiz\bibnamedelimb Enrique\bibnamedelima Vieira},
-           giveni={L\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim V\bibinitperiod},
-           givenun=0,
-           prefix={de},
-           prefixi={d\bibinitperiod},
-           prefixun=0}}%
-        {{un=0,uniquepart=base,hash=dd4a9163f46decdfd58c1172119d8904}{%
-           family={Pomar},
-           familyi={P\bibinitperiod},
-           given={Wladimir},
-           giveni={W\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {Português}%
-      }
-      \list{location}{1}{%
-        {Belo Horizonte}%
-      }
-      \list{publisher}{1}{%
-        {Autêntica Editora}%
-      }
-      \strng{namehash}{f60064b1c0ba334fa282d348ff8e7d33}
-      \strng{fullhash}{f6307c09932e20e5f3334de7459a44bc}
-      \strng{fullhashraw}{f6307c09932e20e5f3334de7459a44bc}
-      \strng{bibnamehash}{f60064b1c0ba334fa282d348ff8e7d33}
-      \strng{authorbibnamehash}{f60064b1c0ba334fa282d348ff8e7d33}
-      \strng{authornamehash}{f60064b1c0ba334fa282d348ff8e7d33}
-      \strng{authorfullhash}{f6307c09932e20e5f3334de7459a44bc}
-      \strng{authorfullhashraw}{f6307c09932e20e5f3334de7459a44bc}
-      \field{sortinit}{B}
-      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2 ed.}
-      \field{isbn}{978-65-5928-048-3}
-      \field{langid}{portuguese}
-      \field{origyear}{2021}
-      \field{title}{China contemporânea: Seis interpretações}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
-    \endentry
-    \entry{Jab-Chn-7dec}{book}{}{}
+    \entry{luckesi-avaprend}{book}{}{}
       \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=4548bfafc7323d9770056fe6176253b9}{%
-           family={Jabbour},
-           familyi={J\bibinitperiod},
-           given={Elias},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {Português}%
-      }
-      \list{location}{1}{%
-        {São Paulo}%
-      }
-      \list{publisher}{1}{%
-        {Anita Garibaldi; Fundação Maurício Grabois}%
-      }
-      \strng{namehash}{4548bfafc7323d9770056fe6176253b9}
-      \strng{fullhash}{4548bfafc7323d9770056fe6176253b9}
-      \strng{fullhashraw}{4548bfafc7323d9770056fe6176253b9}
-      \strng{bibnamehash}{4548bfafc7323d9770056fe6176253b9}
-      \strng{authorbibnamehash}{4548bfafc7323d9770056fe6176253b9}
-      \strng{authornamehash}{4548bfafc7323d9770056fe6176253b9}
-      \strng{authorfullhash}{4548bfafc7323d9770056fe6176253b9}
-      \strng{authorfullhashraw}{4548bfafc7323d9770056fe6176253b9}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2 ed.}
-      \field{isbn}{978-65-990905-5-4}
-      \field{langid}{portuguese}
-      \field{origyear}{2020}
-      \field{title}{China: socialismo e desenvolvimento sete décadas depois}
-      \field{year}{2020}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
-    \endentry
-    \entry{Jab-Chn-sec21}{book}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=4548bfafc7323d9770056fe6176253b9}{%
-           family={Jabbour},
-           familyi={J\bibinitperiod},
-           given={Elias},
-           giveni={E\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=44b63020f111d8a90625dcd1a614244a}{%
-           family={Gabriele},
-           familyi={G\bibinitperiod},
-           given={Alberto},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {Português}%
-      }
-      \list{location}{1}{%
-        {São Paulo}%
-      }
-      \list{publisher}{1}{%
-        {Boitempo}%
-      }
-      \strng{namehash}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{fullhash}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{fullhashraw}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{bibnamehash}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{authorbibnamehash}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{authornamehash}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{authorfullhash}{6c9ee2220150053ea3cb840ce3a56410}
-      \strng{authorfullhashraw}{6c9ee2220150053ea3cb840ce3a56410}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{1 ed.}
-      \field{isbn}{978-65-5717-109-7}
-      \field{langid}{portuguese}
-      \field{origyear}{2021}
-      \field{title}{China: o socialismo do século XXI}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
-    \endentry
-    \entry{lenin-imp}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=294569e0eb69d4dd6f7760a5b2e84a32}{%
-           family={Lenin},
+        {{un=0,uniquepart=base,hash=07df31390f87559efac1c2166720402d}{%
+           family={Luckesi},
            familyi={L\bibinitperiod},
-           given={Vladímir\bibnamedelima Ilitch},
-           giveni={V\bibinitperiod\bibinitdelim I\bibinitperiod},
+           given={Cipriano\bibnamedelima Carlos},
+           giveni={C\bibinitperiod\bibinitdelim C\bibinitperiod},
            givenun=0}}%
       }
       \list{language}{1}{%
@@ -203,152 +35,28 @@
         {São Paulo}%
       }
       \list{publisher}{1}{%
-        {Boitempo}%
+        {Cortez}%
       }
-      \strng{namehash}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{fullhash}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{fullhashraw}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{bibnamehash}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{authorbibnamehash}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{authornamehash}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{authorfullhash}{294569e0eb69d4dd6f7760a5b2e84a32}
-      \strng{authorfullhashraw}{294569e0eb69d4dd6f7760a5b2e84a32}
+      \strng{namehash}{07df31390f87559efac1c2166720402d}
+      \strng{fullhash}{07df31390f87559efac1c2166720402d}
+      \strng{fullhashraw}{07df31390f87559efac1c2166720402d}
+      \strng{bibnamehash}{07df31390f87559efac1c2166720402d}
+      \strng{authorbibnamehash}{07df31390f87559efac1c2166720402d}
+      \strng{authornamehash}{07df31390f87559efac1c2166720402d}
+      \strng{authorfullhash}{07df31390f87559efac1c2166720402d}
+      \strng{authorfullhashraw}{07df31390f87559efac1c2166720402d}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{1 ed.}
-      \field{isbn}{978-65-5717-095-3}
+      \field{edition}{1ª ed.}
+      \field{isbn}{978-85-249-2106-3}
       \field{langid}{portuguese}
-      \field{origyear}{2021}
-      \field{title}{Imperialismo, estágio superior do capitalismo}
-      \field{year}{2021}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
-    \endentry
-    \entry{dask1}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=af80d32a7d375e934f94bdfb27bf2999}{%
-           family={Marx},
-           familyi={M\bibinitperiod},
-           given={Karl},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {Português}%
-      }
-      \list{location}{1}{%
-        {São Paulo}%
-      }
-      \list{publisher}{1}{%
-        {Boitempo}%
-      }
-      \strng{namehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{fullhash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{fullhashraw}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{bibnamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorbibnamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authornamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorfullhash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorfullhashraw}{af80d32a7d375e934f94bdfb27bf2999}
-      \field{extraname}{1}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{1 ed.}
-      \field{isbn}{978-85-7559-322-6}
-      \field{langid}{portuguese}
-      \field{origyear}{2013}
-      \field{title}{O Capital: crítica da economia política. Livro I: o processo de produção do capital}
+      \field{title}{Avaliação da aprendizagem escolar: Estudos e proposições}
       \field{year}{2013}
       \field{dateera}{ce}
-      \field{origdateera}{ce}
-    \endentry
-    \entry{dask2}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=af80d32a7d375e934f94bdfb27bf2999}{%
-           family={Marx},
-           familyi={M\bibinitperiod},
-           given={Karl},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{language}{1}{%
-        {Português}%
-      }
-      \list{location}{1}{%
-        {São Paulo}%
-      }
-      \list{publisher}{1}{%
-        {Boitempo}%
-      }
-      \strng{namehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{fullhash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{fullhashraw}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{bibnamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorbibnamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authornamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorfullhash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorfullhashraw}{af80d32a7d375e934f94bdfb27bf2999}
-      \field{extraname}{2}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{1 ed.}
-      \field{isbn}{978-85-7559-322-6}
-      \field{langid}{portuguese}
-      \field{origyear}{2014}
-      \field{title}{O Capital: crítica da economia política. Livro II: o processo de circulação do capital}
-      \field{year}{2014}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
-    \endentry
-    \entry{dask3}{book}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=af80d32a7d375e934f94bdfb27bf2999}{%
-           family={Marx},
-           familyi={M\bibinitperiod},
-           given={Karl},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{location}{1}{%
-        {São Paulo}%
-      }
-      \list{publisher}{1}{%
-        {Boitempo}%
-      }
-      \strng{namehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{fullhash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{fullhashraw}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{bibnamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorbibnamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authornamehash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorfullhash}{af80d32a7d375e934f94bdfb27bf2999}
-      \strng{authorfullhashraw}{af80d32a7d375e934f94bdfb27bf2999}
-      \field{extraname}{3}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{1 ed.}
-      \field{isbn}{978-85-7559-551-0}
-      \field{origyear}{2017}
-      \field{title}{O {{Capital}}: Crítica Da Economia Política. {{Livro III}}: o Processo Global Da Produção Capitalista}
-      \field{year}{2017}
-      \field{dateera}{ce}
-      \field{origdateera}{ce}
     \endentry
   \enddatalist
 \endrefsection
